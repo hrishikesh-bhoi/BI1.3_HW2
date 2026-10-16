@@ -4,7 +4,7 @@ import useFetch from "../useFetch";
 const Hotels = () => {
 
     const [ successMessage, setSuccessMessage ] = useState("")
-    const { data, loading, error } = useFetch(`http://localhost:3000/hotels`);
+    const { data, loading, error } = useFetch(`https://be-4-4-hw-2-delta.vercel.app/hotels`);
 
 
     // console.log(data);
@@ -12,7 +12,7 @@ const Hotels = () => {
     const handleDelete = async (hotelId) => {
 
         try {
-            const response = await fetch(`http://localhost:3000/hotels/${hotelId}`,{
+            const response = await fetch(`https://be-4-4-hw-2-delta.vercel.app/hotels/${hotelId}`,{
                 method: "DELETE"
             },);
 
