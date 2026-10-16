@@ -57,6 +57,7 @@ const Hotels = () => {
                     ))
                 }
             </ul>
+            <p>{successMessage}</p>
         </div>
     )
 
